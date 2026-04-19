@@ -1,57 +1,80 @@
-# ❓ Sincere vs. Insincere Question Classifier (NLP + Deep Learning)
+# Sincere vs Insincere Question Classifier
 
-## 🚀 Overview
-This project is a Natural Language Processing (NLP) system that classifies questions as **sincere** or **insincere** using deep learning techniques.
+## Overview
 
-It combines multiple approaches including:
-- Deep learning models trained from scratch
-- Pretrained embeddings (GloVe & Word2Vec)
-- Text preprocessing and feature engineering
+This project is about building a model that can classify questions as sincere or insincere using NLP and deep learning.
+
+I worked on different approaches including training a model from scratch and also using pretrained embeddings like GloVe and Word2Vec. The goal was to compare how each method performs on this task.
 
 ---
 
-## 🧠 Models Implemented
-- 🔹 Scratch Model (trained from scratch)
-- 🔹 GloVe-based Model
-- 🔹 Word2Vec-based Model
+## What I did
 
-Each model predicts whether a question is sincere or insincere with a confidence score.
-
----
-
-## 🛠️ Technologies Used
-- Python
-- TensorFlow / Keras
-- NLP (NLTK)
-- Streamlit (for web app)
-- NumPy, Pickle
+* Preprocessed text (cleaning, removing stopwords, etc.)
+* Converted text into sequences using a tokenizer
+* Built multiple deep learning models
+* Used GloVe and Word2Vec embeddings
+* Evaluated predictions based on confidence scores
 
 ---
 
-## 💻 Web Application
-A simple and interactive Streamlit app allows users to:
-- Input any question
-- Choose a model (or all models)
-- View predictions and confidence scores
+## Models used
+
+* Scratch model
+* GloVe-based model
+* Word2Vec-based model
 
 ---
 
-## ⚙️ How to Run the Project
+## Web App
 
-### 1. Clone the repository
-```bash
+I created a simple Streamlit app where you can:
+
+* Enter any question
+* Choose which model to use
+* See if the question is sincere or not
+
+---
+
+## How to run
+
+Clone the repo:
+
+```bash id="7o9db6"
 git clone https://github.com/lailaaa337/Sincere-vs.-Insincere-Question-Classifier-An-NLP-Deep-Learning-Approach.git
-cd PROJECT_DL
+```
 
+Install requirements:
 
-### 2. Install dependencies
-
-```bash
+```bash id="6wbvnj"
 pip install -r requirements.txt
 ```
 
-### 3. Run the app
+Run the app:
 
-```bash
+```bash id="j6c8pw"
 streamlit run app.py
 ```
+
+---
+
+## Notes
+
+The dataset, embeddings, and model files are not included because they are too large for GitHub.
+
+You can download GloVe from:
+https://nlp.stanford.edu/projects/glove/
+
+---
+
+## Future improvements
+
+* Try more advanced models (like transformers)
+* Improve accuracy
+* Deploy the app online
+
+---
+
+## Author
+
+Laila Tarek
